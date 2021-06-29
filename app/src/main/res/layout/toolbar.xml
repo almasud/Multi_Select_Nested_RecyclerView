@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/white"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+    android:elevation="10dp"
+    tools:ignore="UnusedAttribute">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_ios"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_category"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/save"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorAppSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

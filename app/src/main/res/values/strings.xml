@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Nested RecyclerView</string>
+    <string name="bundle_app">app.bundle</string>
+    <string name="parcel_name_categories">parcel.categories</string>
+    <string name="pref_key_action_save_categories">pref.key.action.save.categories</string>
+    <string name="pref_name_categories">com.github.almasud.nested_recyclerview.pref.categories</string>
+    <string name="pref_key_category_expanded_id">com.github.almasud.nested_recyclerview.pref.key.category.expanded.id</string>
+    <string name="pref_key_category_checked_id">com.github.almasud.nested_recyclerview.pref.key.category.checked.id</string>
+    <string name="pref_key_subcategory_checked_id">com.github.almasud.nested_recyclerview.pref.key.subcategory.checked.id</string>
+    <string name="pref_value_yes">com.github.almasud.nested_recyclerview.pref.value.yes</string>
+    <string name="pref_value_no">com.github.almasud.nested_recyclerview.pref.value.no</string>
+    <string name="save">Save</string>
+    <string name="search_category">Search Category</string>
+    <string name="missing_a_category">Missing a category?</string>
+    <string name="clear_all">Clear All</string>
+    <string name="let_us_know">Let us Know!</string>
+    <string name="choose_categories">Choose Categories</string>
+</resources>

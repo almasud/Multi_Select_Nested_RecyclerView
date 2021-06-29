@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.CategorySearchScreen">
+
+    <include
+        android:id="@+id/toolbarSearchCategory"
+        layout="@layout/toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/toolbarSearchCategory"/>
+
+    <RelativeLayout
+        android:id="@+id/category_recyclerView_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:background="@drawable/border_top">
+
+        <TextView
+            android:id="@+id/tvMissingCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/missing_a_category"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/linkMissingCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/let_us_know"
+            android:textColor="@color/colorAppSecondary"
+            android:textSize="16sp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/tvMissingCategory"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/buttonClearAllCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_all"
+            android:textColor="@color/colorAppSecondary"
+            android:textSize="16sp"
+            android:layout_marginStart="2dp"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

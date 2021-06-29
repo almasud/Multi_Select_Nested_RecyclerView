@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.HomeScreen">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chosen_items_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:scrollbars="horizontal"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg_round"/>
+
+    <Button
+        android:id="@+id/buttonChooseCategoryScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_categories"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAppSecondary"
+        android:layout_below="@+id/chosen_items_recyclerView"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:padding="10dp"/>
+
+</RelativeLayout>
