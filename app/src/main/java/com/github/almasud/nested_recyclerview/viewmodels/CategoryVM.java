@@ -29,7 +29,7 @@ import io.reactivex.schedulers.Schedulers;
  */
 public class CategoryVM extends AndroidViewModel {
     private static final String TAG = "CategoryVM";
-    private MutableLiveData<List<Category>> mCategoriesMutableLiveData;
+    private MutableLiveData<List<Category>> mCategoriesMutableLiveData = new MutableLiveData<>();
 
     public CategoryVM(@NonNull Application application) {
         super(application);
@@ -60,13 +60,9 @@ public class CategoryVM extends AndroidViewModel {
                         Toast.makeText(getApplication(), "Failed to establish connection! Couldn't fetch the data.", Toast.LENGTH_SHORT).show();
                     }
                 });
-        Log.d(TAG, "loadCategoryData: is loaded.");
     }
 
     public LiveData<List<Category>> getCategoriesLiveData() {
-        if (mCategoriesMutableLiveData == null) {
-            mCategoriesMutableLiveData = new MutableLiveData<>();
-        }
         return mCategoriesMutableLiveData;
     }
 }
