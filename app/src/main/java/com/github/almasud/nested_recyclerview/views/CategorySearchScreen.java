@@ -39,7 +39,9 @@ public class CategorySearchScreen extends AppCompatActivity {
         sBundle = getIntent().getBundleExtra(getString(R.string.bundle_app));
         if (sBundle != null) {
             mCategories = sBundle.getParcelableArrayList(getString(R.string.parcel_name_categories));
-            Log.d(TAG, "onCreate: First category is: " + mCategories.get(0).getCategoryName());
+            if (!mCategories.isEmpty()) {
+                Log.d(TAG, "onCreate: First category is: " + mCategories.get(0).getCategoryName());
+            }
         } else {
             Log.d(TAG, "onCreate: Data bundle is null");
         }

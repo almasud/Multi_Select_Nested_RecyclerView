@@ -14,10 +14,14 @@
         android:id="@+id/category_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
+        android:layout_below="@+id/toolbarSearchCategory"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:scrollbars="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_below="@+id/toolbarSearchCategory"/>
+        tools:listitem="@layout/item_category"/>
 
     <RelativeLayout
         android:id="@+id/category_recyclerView_bottom"

@@ -57,6 +57,5 @@
             android:clickable="true"
             android:focusable="true"/>
 
-
     </RelativeLayout>
 </androidx.appcompat.widget.Toolbar>

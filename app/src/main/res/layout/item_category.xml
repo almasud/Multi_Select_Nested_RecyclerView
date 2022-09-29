@@ -22,10 +22,10 @@
             android:id="@+id/tvCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Activism"
             android:layout_toEndOf="@+id/imageCatExpandable"
             android:padding="5dp"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            tools:text="Activism" />
 
         <ImageButton
             android:id="@+id/iButtonCatAddable"
@@ -41,6 +41,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:visibility="gone"/>
+        tools:listitem="@layout/item_subcategory"
+        android:visibility="gone"
+        tools:visibility="visible"/>
 
 </LinearLayout>
